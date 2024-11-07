@@ -14,8 +14,9 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: calc(33.333% - 20px); /* Three cards per row */
-    min-width: 250px;
+    min-width: 300px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
 }
 
 .project-card h3 {
@@ -35,6 +36,8 @@
 .tools {
     font-weight: bold;
     margin-top: 10px;
+    display: inline-block;
+    color: #333;
 }
 
 .frameworks {
@@ -47,4 +50,25 @@
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 1199px) {
+    .project-card {
+        width: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+/* For screens smaller than 768px (tablets and small devices) */
+@media (max-width: 767px) {
+    .project-card {
+        width: 100%; /* One card per row */
+    }
+}
+
+/* For screens smaller than 480px (small mobile devices) */
+@media (max-width: 480px) {
+    .project-card {
+        padding: 15px; /* Reduce padding on small screens */
+    }
 }
