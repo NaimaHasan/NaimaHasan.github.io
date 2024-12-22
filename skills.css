@@ -1,7 +1,7 @@
 #skills {
     margin-top: 40px;
     padding: 20px;
-    background-color: #f4f7fa;
+    background-color: #fff;
     border-radius: 8px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .skill {
-    background-color: #eee;
+    background-color: #eeeeeea1;
     color: #333;
     padding: 10px;
     margin: 10px;

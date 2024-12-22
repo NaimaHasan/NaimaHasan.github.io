@@ -9,12 +9,12 @@
 }
 
 .project-card {
-    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: calc(33.333% - 20px); /* Three cards per row */
-    min-width: 300px;
+    margin: 10px auto;
+    width: calc(33.333% - 20px); 
+    min-width: 320px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-sizing: border-box;
 }
